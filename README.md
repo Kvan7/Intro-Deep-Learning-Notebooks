@@ -1,11 +1,27 @@
-# Intro-Deep-Learning-Notebooks
+## Spring 2022 CSE 479/879 Hackathons
 
-by Eleanor Quint
+Welcome! This page will host all the hackathons for the Spring 2002 semester. This readme will guide you through getting the Hackathons up and running. Please ask me if you've got any questions or suggestions, and I hope you have a great semester. \-Ellie
 
-I put together these Jupyter notebooks for use in teaching CSCE 496/896 Intro to Deep Learning at the University of Nebraska-Lincoln. Students have given me a lot of feedback that these have been valuable learning resources, so I thought I'd make them public!
+### How to Get Started
 
-Currently, These hackathons are direct dumps from teaching Spring 2019's CSCE 496/896 at UNL used on HCC's Crane cluster. Thus, every one of these hackathons is going to have something broken. Much of this should be easy to fix (e.g., choosing the right kernel and updating where the dataset is loaded from), but there might be some more obscure things. The notebooks presently run on TensorFlow 1.9, but I'll soon be updating them to TF 2.0 for teaching in Fall 2019.
+To get started with these hackathons, you should run the `create_env.sh` file on Crane. It will create a GPU-enabled Anaconda environment called `tensorflow-env` and set it up as a Jupyter kernel.
 
-Please email me at equint@cse.unl.edu with any questions, comments, feedback, or suggestions! (or just to tell me that you used these!)
+You can upload the file by downloading from GitHub (click to open the file > click the "raw" button in the upper-right > right click and hit save)
 
-This repository is presently unlicenced. I will say that I'm generally cool with any personal or academic use which is cited and not for profit. Further, if anything is derived from this repo, it must not be used toward any evil or unethical end. Further, if I used your work without properly citing you, please please please get ahold of me and I'll correct that mistake.
+To upload a file to Crane
+1. Navigate to [crane.unl.edu](https://crane.unl.edu/)
+2. In the top drop-down, click the "Files" dropdown and select the "Home Directory" button
+3. In the upper right of the page showing the files, click the "Upload" model and use the dialog popup to upload the file.
+4. Finally, open a shell on crane with SSH or on [crane.unl.edu](https://crane.unl.edu/)	 and run the file with `sh`.
+
+To use the environment outside of a Jupyter notebook, you can run:
+```bash
+module load anaconda
+conda activate tensorflow-env
+```
+
+### How to Run Hackathons in Jupyter
+
+You can upload each notebook to Crane and run/edit it as you like. Make sure you set the kernel to `Python (tensorflow-env)` or to your custom kernel. Each hackathon has a homework at the bottom which you should submit to Canvas by the deadline indicated on the Canvas assignment.
+
+Let us know by email, in office hours, or on Piazza if you run into any problems.
